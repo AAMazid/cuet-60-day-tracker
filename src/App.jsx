@@ -438,13 +438,6 @@ const DAYS_DATA = [
   {day:59,week:8,phase:4,title:"Final Showcase Prep",blocks:{ai:{label:"AI Automation",hours:5,tasks:["Select your 3 best projects for a final demo","Prepare a 10-min presentation (slides or demo walkthrough)","Record yourself presenting each project — watch it back critically","Polish GitHub profile: profile README, pinned repos","Set 30-day post-CUET goals: freelancing, new tools, first income target"]},mech:{label:"Mechanics",hours:3,tasks:["FINAL EXAM SIMULATION: Full 3-hour engineering paper","Calculus: 5 problems, Mechanics: 8 problems, Drawing: 2 problems","No notes allowed — simulate real exam conditions","Grade yourself honestly; write a score out of 100"]},eng:{label:"English & Prompting",hours:1,tasks:["Write a 500-word cover letter for a prestigious engineering scholarship","Record a 5-min video: 'My 60-day journey to CUET'","Final prompt: Write the best prompt you have ever written"]}}},
   {day:60,week:8,phase:4,title:"Graduation Day! 🎓",isGraduation:true,blocks:{ai:{label:"AI Graduation",hours:5,tasks:["Final showcase: Demo all 3 best projects (record for portfolio)","Celebrate: You are now an AI Automation Engineer with a live portfolio","Plan next 30 days: 1 freelance client, 2 new tool explorations, daily coding","Write a LinkedIn post: '60 days, 10+ projects, 1 goal — ready for CUET'","Thank yourself for showing up every day"]},mech:{label:"Mech Graduation",hours:3,tasks:["Review your Mechanics Cheat Sheet — your CUET survival guide","Open your FreeCAD models — print or save your best drawings","Re-solve Day 1 FBD problems — see how far you have come","Write: 'Engineering concepts I am confident in' vs 'Topics to continue'","You enter CUET ahead of 90% of your batch on fundamentals"]},eng:{label:"Eng Graduation",hours:1,tasks:["Count your vocabulary notebook — you have 300 new technical words","Re-read your Day 1 writing — compare to today's writing quality","Review your Prompt Library — you are now a prompt engineer","Set one 60-day English goal for your first semester at CUET","You are ready. Go build. Go learn. Go succeed. 🚀"]}}},
 ];
-// =============== END OF 60-DAY DATA ===============
-  
-  
-  
-  // ... (the rest of the 60 days exactly as in your original data – I've omitted the rest for brevity, but you must paste the full 60‑day array from your previous code here)
-  // Because the full DAYS_DATA is extremely long, please ensure you include all 60 entries. The array ends with day 60 as shown in earlier responses.
-];
 
 // ─── Main App Component ──────────────────────────────────────────
 export default function App() {
@@ -527,7 +520,7 @@ export default function App() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-api-key": "YOUR_ANTHROPIC_API_KEY", // Replace with your key
+          "x-api-key": "YOUR_ANTHROPIC_API_KEY", // Replace with your key or set via env
         },
         body: JSON.stringify({
           model: "claude-sonnet-4-20250514",
